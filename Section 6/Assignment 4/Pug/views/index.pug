@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="/css/form.css")
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        header.header
+            nav.nav
+                ul.nav-items
+                    li.nav-item
+                        a(href="/") Home
+                    li.nav-item
+                        a(href="/users") Users
+    
+        form(action="/users" method="POST").user-form
+            .form-controls
+                label Name
+                input(type="text" name="username")
+            button(type="submit") Submit

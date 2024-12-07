@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/main.css")
+        title Document
+    body
+        header.header
+                nav.nav
+                    ul.nav-items
+                        li.nav-item
+                            a(href="/") Home
+                        li.nav-item
+                            a(href="/users") Users
+        h1 Users Pug
+        ul
+            each name in names
+                li.list-item #{name}
